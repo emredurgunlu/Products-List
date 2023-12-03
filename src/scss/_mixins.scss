@@ -6,7 +6,7 @@
   gap: $gap;
   flex-direction: $direction;
 }
-
+// alttaki kısım hamgurger menu ikonu efekti için
 @mixin transform($property1, $property2: "a") {
   @if $property2 == "a" {
     transform: $property1;
@@ -18,6 +18,6 @@
 
 @mixin media-xsm {
   @media screen and (max-width: 576px) {
-    @content;
+    @content; // media-xsm mixingi nerede include edildi ise include edildiği yerdeki stil özeeliklerini parametre gibi ama block şeklinde direkt al
   }
 }

@@ -25,9 +25,9 @@
       width: 100%;
       height: $cardHeight;
       border-radius: $borderRadius;
-      filter: sepia(100%);
+      filter: sepia(100%); // resimleri sarımsı gösterir
     }
-    &__over {
+    &__over { //  &__over className'i .card__over demek
       width: 100%;
       position: absolute;
       bottom: 0;
@@ -37,22 +37,22 @@
       font-size: 1.2rem;
       padding: $cardPadding;
       border-radius: $borderRadius;
-      transform: translateX(100%);
+      transform: translateX(100%); // .card__over'ı iyise sağa kaydır yok olsun
       transition: transform 0.7s ease-in-out;
       z-index: 3;
       height: 25%;
       text-align: center;
       overflow: auto;
-      &::-webkit-scrollbar {
+      &::-webkit-scrollbar { // .card__over içindeki yazı sığmadığında scroll olurken sağda scroll bar çıkmaması için örneğin 695 liralık 6. ürün
         display: none;
       }
     }
 
-    &:hover .card__over {
-      transform: translateX(0%);
+    &:hover .card__over { //.card'a hover yaptığında .card__over classına şunu yap
+      transform: translateX(0%); // sağa gidip kaybolmuş .card__over'ı geri getir
     }
     &:hover img {
-      filter: none;
+      filter: none; // filter: sepia(100%); sarımsılığı kaldırıp orjinal görüntüsünü gösterir
     }
   }
 }

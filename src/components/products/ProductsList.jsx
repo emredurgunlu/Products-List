@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 import "./Products.scss";
 
 // Gelen parametre 1 elemanlı bir obje bkz. App.js file bunu {products} süslü içine aldık
-// Eğer bunun süslü içine almasaydık (products)=> olsaydı 11. satırda diziye ulaşmamız için {products.products.map((product) => ( yapmamız gerekecekti
+// Eğer bunun süslü içine almasaydık yani (products)=> olsaydı map olan yerlerde diziye ulaşmamız {products.products.map((product) => ( yapmamız gerekecekti
 const ProductsList = ({ products }) => {
   console.log(products);
   return (
